@@ -14,15 +14,15 @@
 
 ### Source.cpp
 Данный файл содержит в себе основной блок кода, в котором выполняется считывание матриц из файлов, перемножение и запись полученной матрицы, также выполняется запись количества элементов и времени выполнения
-`int** mulMatrix(int** a, int** b, int row1, int col1, int row2, int col2)` 
+\n`int** mulMatrix(int** a, int** b, int row1, int col1, int row2, int col2)` 
 Перемножение матриц, последовательный вариант
 
 ### Main.py
 В данном файле содержатся функции генерации матриц, проверки переможения и создания графика полученного по результатам эксперимента
 
-`def genMatrix(a: int, b: int, c: int, path1: str, path2: str):`
-`def write_matrix(path: str, mt: np.array):`
-`def read_matrix(path: str) -> np.array:`
+1. `def genMatrix(a: int, b: int, c: int, path1: str, path2: str):`
+2. `def write_matrix(path: str, mt: np.array):`
+3. `def read_matrix(path: str) -> np.array:`
 
 ### График 
 В результате проведения лабораторной работы была построена следующая зависимость времени выполнения от количества элементов
