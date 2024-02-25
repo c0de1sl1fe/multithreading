@@ -39,7 +39,7 @@ if __name__ == "__main__":
     a = 4
     b = 4
     c = 5
-    for i in range(100, 500, 10):
+    for i in range(5, 50):
         genMatrix(a*i, b*i, c*i, "matrix1.txt", "matrix2.txt")
         os.system(
             "C:/Users/every/source/repos/multithreading/Debug/multithreading.exe")
