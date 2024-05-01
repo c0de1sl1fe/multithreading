@@ -36,12 +36,19 @@ def genMatrix(a: int, b: int, c: int, path1: str, path2: str):
 
 
 if __name__ == "__main__":
+    path_cpp = "C:/Users/every/source/repos/multithreading/Debug/multithreading.exe"
+    path_res_template = "D:\git\multithreading\lab2/res/"
+    thread_arr = [1,2, 4, 8, 12]
+    
     a = 4
     b = 4
     c = 5
-    for i in range(5, 50):
-        genMatrix(a*i*2, b*i*2, c*i*2, "matrix1.txt", "matrix2.txt")
-        os.system(
-            "C:/Users/every/source/repos/multithreading/Debug/multithreading.exe")
-        print(verify_matmul(read_matrix("matrix1.txt"), read_matrix(
-            "matrix2.txt"), read_matrix("res_cpp.txt")))
+    for i_thread in thread_arr: 
+        for i in range(5, 50, 5):
+            for j in range(0, 10):
+                genMatrix(a*i, b*i, c*i, "matrix1.txt", "matrix2.txt")    
+                os.system(f"{path_cpp} {i_thread} {path_res_template}stats_lab2_t_{i_thread}")
+                print(verify_matmul(read_matrix("matrix1.txt"), read_matrix(
+                    "matrix2.txt"), read_matrix("res_cpp.txt")))
+                
+        print(f"finish thread = {i_thread}")

@@ -55,7 +55,7 @@ int** mulMatrix_omp(int** a, int** b, int row1, int col1, int row2, int col2)
 
 ### График 
 В результате проведения лабораторной работы была построена следующая зависимость времени выполнения от количества элементов<br>
-![alt text](output.png)
+![alt text](res/output.png)
 
 [res_lab1](stats_lab1.txt)
 [res_lab2](stats_lab2.txt)
