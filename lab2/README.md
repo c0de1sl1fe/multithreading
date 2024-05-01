@@ -9,7 +9,7 @@
 3. RAM 16 GB 3200 MHz
 
 ## Результаты: 
-[Code source](https://github.com/c0de1sl1fe/multithreading/tree/main/lab1)
+[Code source](https://github.com/c0de1sl1fe/multithreading/tree/main/lab2)
 1. исходные файлы с матрицами: "matrix1.txt", "matrix2.txt" 
 2. результат перемножения: "res_cpp.txt"
 3. файлы статистики: "stats_lab1.txt", "stats_lab2.txt"
@@ -56,6 +56,7 @@ int** mulMatrix_omp(int** a, int** b, int row1, int col1, int row2, int col2)
 ### График 
 В результате проведения лабораторной работы была построена следующая зависимость времени выполнения от количества элементов<br>
 ![alt text](output.png)
+
 [res_lab1](stats_lab1.txt)
 [res_lab2](stats_lab2.txt)
 ## Выводы
