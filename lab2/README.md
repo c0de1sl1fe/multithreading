@@ -56,6 +56,12 @@ int** mulMatrix_omp(int** a, int** b, int row1, int col1, int row2, int col2)
 ### График 
 В результате проведения лабораторной работы была построена следующая зависимость времени выполнения от количества элементов<br>
 ![alt text](res/output.png)
+Количество потоков
+1. [1 поток](res/stats_lab2_t_1)
+2. [12 потоков](res/stats_lab2_t_12)
+3. [2 потока](res/stats_lab2_t_2)
+4. [4 потока](res/stats_lab2_t_4)
+5. [8 потоков](res/stats_lab2_t_8)
 
 [res_lab1](stats_lab1.txt)
 [res_lab2](stats_lab2.txt)
