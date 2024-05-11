@@ -13,7 +13,7 @@
 1. исходные файлы с матрицами: "matrix1.txt", "matrix2.txt" 
 2. результат перемножения: "res_cpp.txt"
 3. файлы статистики: stats1.txt, stats2.txt, stats4.txt, stats8.txt
-4. файлы pbs свидетельствующие о запуске на суперкомпьютере (script1.pbs)[script1.pbs], (script2.pbs)[script2.pbs], (script4.pbs)[script4.pbs],(script8.pbs)[script8.pbs] 
+4. файлы pbs свидетельствующие о запуске на суперкомпьютере [script1](script1.pbs), [script2](script2.pbs), [script4](script4.pbs), [script8](script8.pbs)
 
 ### Source.cpp
 Данный файл содержит в себе основной блок кода, в котором выполняется считывание матриц из файлов, перемножение и запись полученной матрицы, также выполняется запись количества элементов и времени выполнения<br>
@@ -31,10 +31,10 @@
 ![alt text](utils/output.png)
 
 Количество потоков
-1. [1 node](utils/ stats1.txt)
-2. [2 node](utils/ stats2.txt)
-3. [4 node](utils/ stats4.txt)
-4. [4 node](utils/ stats8.txt)
+1. [1 node](utils/stats1.txt)
+2. [2 node](utils/stats2.txt)
+3. [4 node](utils/stats4.txt)
+4. [4 node](utils/stats8.txt)
 
 
 ## Выводы
