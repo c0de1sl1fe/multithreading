@@ -5,7 +5,7 @@ import time
 
 def write_matrix(path: str, mt: np.array):
     with open(path, "w") as f:
-        f.write(f"{np.shape(mt)[0]} {np.shape(mt)[1]}\n")
+        # f.write(f"{np.shape(mt)[0]} {np.shape(mt)[1]}\n")
         for i in mt:
             for j in i:
                 f.write(f"{j} ")
@@ -43,13 +43,13 @@ def genMatrix(a: int, b: int, c: int, path1: str, path2: str):
 
 if __name__ == "__main__":
     path_cpp = "C:/Users/every/source/repos/multithreading/Debug/multithreading.exe"
-    path_matrix = "D:/git/multithreading/lab3/utils/source"
+    path_matrix = "D:\git\multithreading\lab3/utils\source"
+    
     path_hpc = "/home/multithreading/lab3/utils/source"
     path_to_pbs = "D:\git\multithreading\lab3/utils\source/script"    
 
 
     path_res_template = "D:\git\multithreading\lab2/res/"
-    thread_arr = [1,2, 4, 8, 12]
 
     os.system(f"{path_cpp} path_1 path_2 path_res size")
 
@@ -58,15 +58,14 @@ if __name__ == "__main__":
     b = 4
     c = 4
 
-    path_matrix = "D:\git\multithreading\lab3/untils/source/"
 
     for num_node in [1, 2, 4, 8]:
-        for i in range(0, 20): # size matrix
-            genMatrix(a*10*i, a*10*i, a*10*i, f"{path_matrix}/mat1_{i}", f"{path_matrix}/mat2_{i}")
+        for i in range(1, 21): # size matrix
+            # genMatrix(a*10*i, a*10*i, a*10*i, f"{path_matrix}/mat1_{i}.txt", f"{path_matrix}/mat2_{i}.txt")
             for j in range(0, 5): # repeat operation
                 # just dublicate run to file
-                write_append(f"{path_to_pbs}{num_node}", 
-                             f"mpirun -r ssh ./Source1 {path_hpc}/mat1_{i} {path_hpc}/mat2_{i} {path_hpc}/res_{i} {a*10*i} {path_hpc}/script{num_node}")
+                write_append(f"{path_to_pbs}{num_node}.txt", 
+                             f"mpirun -r ssh ./Source1 {path_hpc}/mat1_{i}.txt {path_hpc}/mat2_{i}.txt /res_{i}.txt {a*10*i} stats_{num_node}.txt\n")
 
 
     # for i_thread in thread_arr: 
