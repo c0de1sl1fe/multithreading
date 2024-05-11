@@ -1,0 +1,7 @@
+#!/bin/bash
+#SBATCH --job-name=lab_MPI_1
+#SBATCH --time=0:05:00
+#SBATCH --ntasks-per-node=1
+#SBATCH --partition batch
+
+modul load intel/mpi4
